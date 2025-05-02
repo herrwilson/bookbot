@@ -4,9 +4,8 @@ def main():
     if len(sys.argv) != 2:
         print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
-    path_to_book = sys.argv[1]    
-    content = get_book_text(path_to_book)
     
+    path_to_book = sys.argv[1]    
     content = get_book_text(path_to_book)
     word_count = word_counter(content)
     character_count = character_counter(content)
